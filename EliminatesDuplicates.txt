@@ -1,44 +1,4 @@
 
-Start
-Create a Scanner object to read user input
-Print a prompt asking the user to enter ten integer numbers, one value at a time
-Create an array 'numbers' to store the input integers
-Loop 10 times to read 10 integers from the user:
-   Set a boolean variable 'validInput' to false
-   While 'validInput' is false:
-         If the next input token is an integer:
-         Read the integer and store it in the 'numbers' array
-         Set 'validInput' to true
-         Else:
-            Print an error message indicating invalid input
-            Disregard the invalid input
-   Call a function 'eliminateDuplicates' with the 'numbers' array as argument to remove duplicate values
-   Sort the resulting array of distinct numbers from smallest to largest
-   Print the distinct numbers separated by spaces
-   End
-
-Function eliminateDuplicates(list):
-Create a new array 'temp' with the same length as 'list'
-Initialize a variable 'size' to 0
-Loop through each item 'num' in 'list':
-   Set a boolean variable 'isDuplicate' to false
-   Loop through each item 'item' in 'temp' up to 'size':
-        If 'num' equals 'item':
-           Set 'isDuplicate' to true
-           Break out of the loop
-        If 'isDuplicate' is false:
-           Add 'num' to the 'temp' array at index 'size'
-           Increment 'size'
-   Create a new array 'result' with length 'size'
-   Copy the elements from 'temp' to 'result' up to index 'size'
-   Return the 'result' array
-
-
-
---------------------------------------------------
-
-
-
 import java.util.*;
 
 public class Main {
@@ -107,8 +67,3 @@ public class Main {
         return result;
     }
 }
-
-
-
-
-
